@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Info</title>
+</head>
+<body>
+    <p1 id="Account Name"></p1>
+    <p1 id="Account Number"></p1>
+    <p1 id="isVerified"></p1>
+    <p1 id="Balance"></p1>
+    <label>Username:</label>
+    <input id="username" type="text" placeholder="Enter your username">
+    <button>Submit</button>
+</body>
+</html>
+<script>
+    const bankInfo = {
+        AccountName: 'John Paul',
+        AccountNumber: '1234567890',
+        isVerified: true,
+        Balance: 1000.50,
+        lastTransactions: [
+        { amount: 200.00, date: '2023-10-01', type: 'deposit' },
+        { amount: 50.00, date: '2023-10-02', type: 'withdrawal' },
+        { amount: 150.00, date: '2023-10-03', type: 'deposit' }
+        ],
+    }
+    /*console.log(`My account name is ${bankInfo.AccountName}, and my account number is ${bankInfo.AccountNumber}.`);
+    document.getElementById("Account Name").textContent = bankInfo.AccountName;
+    document.getElementById("Account Number").textContent = bankInfo.AccountNumber;*/
+    document.getElementById("username"). onclick = function() {
+        
+    }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <h2>Balance: ₦<span id="balance">1000</span></h2>
+  
+  <input id="expense-name" placeholder="Expense name">
+  <input id="expense-amount" type="number" placeholder="Amount">
+  <button id="add-expense-btn">Add Expense</button>
+  
+  <h3>Expenses:</h3>
+  <ul id="expense-list"></ul>
+
+  <script>
+   const descInput = document.getElementById("expense-name");
+const amountInput = document.getElementById("expense-amount");
+const addBtn = document.getElementById("add-expense-btn");
+
+
+   addBtn.addEventListener("click", () => {
+    const description = descInput.value;
+    const amount = Number(amountInput.value);
+    console.log("Item:", description, "Amount:", amount);
+   });
+
+   
+  </script>
+</body>
+</html>
